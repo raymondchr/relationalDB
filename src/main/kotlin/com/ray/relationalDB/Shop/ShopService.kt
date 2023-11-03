@@ -1,9 +1,7 @@
 package com.ray.relationalDB.Shop
 
-import com.ray.relationalDB.dto.SellerProductResponse
 import com.ray.relationalDB.error.NotFoundException
-import com.ray.relationalDB.model.CreateShopRequest
-import com.ray.relationalDB.Seller.Seller
+import com.ray.relationalDB.Shop.model.CreateShopRequest
 import com.ray.relationalDB.Product.ProductRepository
 import com.ray.relationalDB.Seller.SellerRepository
 import org.springframework.data.domain.Page
@@ -62,9 +60,4 @@ class ShopService (
         return shopRepository.findByIdOrNull(id) ?: throw NotFoundException()
     }
 
-//    fun getShopProducts(id: Int, pageable: Pageable): SellerProductResponse{
-//        val shop = shopRepository.findByIdOrNull(id) ?: throw NotFoundException()
-//        val products: Page
-//
-//    }
 }

@@ -1,14 +1,10 @@
 package com.ray.relationalDB.Product
 
-import com.ray.relationalDB.Category.Category
 import com.ray.relationalDB.Category.CategoryRepository
 import com.ray.relationalDB.Product.dto.ProductWithCategory
 import com.ray.relationalDB.ProductCategory.ProductCategoryRepository
-import com.ray.relationalDB.error.NotFoundException
-import com.ray.relationalDB.model.CreateProductRequest
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
-import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Service
 
 @Service

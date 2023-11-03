@@ -1,8 +1,6 @@
 package com.ray.relationalDB.Shop
 
-import com.ray.relationalDB.model.CreateShopRequest
-import com.ray.relationalDB.Shop.ShopResponse
-import com.ray.relationalDB.Shop.ShopService
+import com.ray.relationalDB.Shop.model.CreateShopRequest
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.web.bind.annotation.DeleteMapping

@@ -1,4 +1,4 @@
-package com.ray.relationalDB.model
+package com.ray.relationalDB.Product.model
 
 class CreateProductRequest(
     val productName: String?,

@@ -13,4 +13,6 @@ interface SellerRepository: JpaRepository<Seller, Int> {
        FROM Seller se
     """)
     fun findAllSeller(pageable: Pageable): Page<Seller>
+
+
 }

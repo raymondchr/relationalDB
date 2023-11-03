@@ -1,4 +1,4 @@
-package com.ray.relationalDB.model
+package com.ray.relationalDB.Seller.model
 
 data class CreateSellerRequest(
     val name: String,

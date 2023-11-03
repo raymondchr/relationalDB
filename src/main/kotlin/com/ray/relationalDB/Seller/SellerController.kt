@@ -1,7 +1,7 @@
 package com.ray.relationalDB.Seller
 
-import com.ray.relationalDB.model.CreateSellerRequest
-import com.ray.relationalDB.model.UpdateSellerRequest
+import com.ray.relationalDB.Seller.model.CreateSellerRequest
+import com.ray.relationalDB.Seller.model.UpdateSellerRequest
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.web.bind.annotation.*

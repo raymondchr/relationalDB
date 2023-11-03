@@ -1,6 +1,6 @@
 package com.ray.relationalDB.controller
 
-import com.ray.relationalDB.model.ErrorResponse
+import com.ray.relationalDB.error.model.ErrorResponse
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.ResponseStatus
@@ -22,7 +22,7 @@ class ErrorController {
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler
-    fun existInDB(illegalArgumentException: IllegalArgumentException): ErrorResponse{
+    fun existInDB(illegalArgumentException: IllegalArgumentException): ErrorResponse {
         return ErrorResponse(
             code = 400,
             status = "Already Exist"

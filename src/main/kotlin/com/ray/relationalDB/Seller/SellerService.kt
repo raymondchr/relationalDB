@@ -1,12 +1,9 @@
 package com.ray.relationalDB.Seller
 
-import com.ray.relationalDB.dto.SellerProductResponse
-import com.ray.relationalDB.model.CreateSellerRequest
+import com.ray.relationalDB.Seller.model.CreateSellerRequest
 import com.ray.relationalDB.error.NotFoundException
-import com.ray.relationalDB.model.UpdateSellerRequest
+import com.ray.relationalDB.Seller.model.UpdateSellerRequest
 import com.ray.relationalDB.Product.ProductRepository
-import com.ray.relationalDB.Product.ProductResponse
-import com.ray.relationalDB.model.CreateProductRequest
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.data.repository.findByIdOrNull
@@ -59,11 +56,6 @@ class SellerService(
         return seller.toResponse()
     }
 
-//    fun createProduct(id: Int, createProductRequest: CreateProductRequest): ProductResponse {
-//        val product = productRepository.findByIdOrNull(id)
-//
-//
-//    }
 
     private fun findOneOrThrowNotFound(id: Int): Seller {
         return sellerRepository.findByIdOrNull(id) ?: throw NotFoundException()

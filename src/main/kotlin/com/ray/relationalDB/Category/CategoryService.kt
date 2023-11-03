@@ -32,24 +32,6 @@ class CategoryService(private val categoryRepository: CategoryRepository) {
         }
 
     }
-
-//        val existingCategory=categoryRepository.findCategoryByName(createNewCategory.description)
-//        return if (existingCategory.decription != createNewCategory.description){
-//            val newCategory = Category(
-//                description = createNewCategory.description
-//            )
-//
-//            categoryRepository.save(newCategory)
-//
-//            newCategory.toResponse()
-//        }else{
-//            CategoryResponse(
-//                id = 0,
-//                description = "ALREADY EXIST"
-//            )
-//        }
-
-
     fun getCategoryByIdOrThrowNull(id: Int): Category{
         return categoryRepository.findByIdOrNull(id) ?: throw NotFoundException()
     }

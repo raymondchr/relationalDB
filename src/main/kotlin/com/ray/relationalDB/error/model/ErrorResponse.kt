@@ -1,4 +1,4 @@
-package com.ray.relationalDB.model
+package com.ray.relationalDB.error.model
 
 data class ErrorResponse(
     val code: Int,
